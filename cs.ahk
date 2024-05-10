@@ -1,6 +1,8 @@
 PlayCounterStrike() {
     Before()
-    RunWait, "C:/Program Files (x86)/Steam/steamapps/common/Counter-Strike Global Offensive/game/bin/win64/cs2.exe"
+    Run, "C:/Program Files (x86)/Steam/steam.exe" -silent steam://run/730
+    WinWait, Counter-Strike 2
+    WinWaitClose
     After()
 }
 
