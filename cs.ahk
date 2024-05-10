@@ -14,7 +14,7 @@ Before() {
 
 After() {
     CloseSteam()
-    CloseVibranceGUI()
+    CloseVibranceGui()
     ; TODO Reopen anything that was closed
 }
 
