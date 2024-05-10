@@ -17,7 +17,7 @@ After() {
 OpenSteam() {
     Process, Exist, steam.exe
     If Not ErrorLevel {
-        Run, "C:/Program Files (x86)/Steam/steam.exe"
+        Run, "C:/Program Files (x86)/Steam/steam.exe" -silent
         Loop {
             Sleep, 1000
             RegRead, ActiveUser, HKEY_CURRENT_USER\SOFTWARE\Valve\Steam\ActiveProcess, ActiveUser
