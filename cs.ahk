@@ -5,8 +5,7 @@ PlayCounterStrike() {
 }
 
 Before() {
-    ; TODO Close Docker, NVIDIA Broadcast, Phone Link, Playnite
-    ; TODO Focus assist on
+    ; TODO Close Docker, NVIDIA Broadcast, Phone Link, Playnite, ???
     OpenSteam()
     OpenVibranceGui()
 }
@@ -15,7 +14,6 @@ After() {
     CloseSteam()
     CloseVibranceGUI()
     ; TODO Reopen anything that was closed
-    ; TODO Focus assist off
 }
 
 OpenSteam() {
