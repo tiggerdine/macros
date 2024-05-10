@@ -5,6 +5,8 @@ PlayCounterStrike() {
 }
 
 Before() {
+    ; TODO Close Docker, NVIDIA Broadcast, Phone Link, Playnite
+    ; TODO Focus assist on
     OpenSteam()
     OpenVibranceGui()
 }
@@ -12,6 +14,8 @@ Before() {
 After() {
     CloseSteam()
     CloseVibranceGUI()
+    ; TODO Reopen anything that was closed
+    ; TODO Focus assist off
 }
 
 OpenSteam() {
@@ -23,7 +27,6 @@ OpenSteam() {
             RegRead, ActiveUser, HKEY_CURRENT_USER\SOFTWARE\Valve\Steam\ActiveProcess, ActiveUser
         } Until ActiveUser != 0
     }
-    WinMinimize, Steam
 }
 
 OpenVibranceGui() {
