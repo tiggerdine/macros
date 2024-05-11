@@ -6,7 +6,7 @@ PlayCounterStrike() {
 
     Before()
 
-    Run, "C:/Program Files (x86)/Steam/steam.exe" -silent steam://run/730
+    Run, "C:/Program Files (x86)/Steam/steam.exe" steam://run/730
     WinWait, Counter-Strike 2
     WinWaitClose
 
