@@ -15,6 +15,7 @@ PlayCounterStrike() {
 
 Before() {
     ; TODO Close Docker, NVIDIA Broadcast, Phone Link, Playnite, ???
+    Run, "C:/Program Files (x86)/DisplayFusion/DisplayFusionCommand.exe" -monitorloadprofile Left
     OpenSteam()
     OpenVibranceGui()
 }
@@ -22,6 +23,7 @@ Before() {
 After() {
     CloseSteam()
     CloseVibranceGui()
+    Run, "C:/Program Files (x86)/DisplayFusion/DisplayFusionCommand.exe" -monitorloadprofile Both
     ; TODO Reopen anything that was closed
 }
 
