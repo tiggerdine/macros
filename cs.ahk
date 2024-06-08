@@ -14,7 +14,8 @@ PlayCounterStrike() {
 }
 
 Before() {
-    ; TODO Close Docker, NVIDIA Broadcast, Phone Link, Playnite, ???
+    Run, mullvad disconnect
+    CloseStuff()
     Run, "C:/Program Files (x86)/DisplayFusion/DisplayFusionCommand.exe" -monitorloadprofile Left
     OpenSteam()
     OpenVibranceGui()
@@ -26,7 +27,14 @@ After() {
     CloseSteam()
     CloseVibranceGui()
     Run, "C:/Program Files (x86)/DisplayFusion/DisplayFusionCommand.exe" -monitorloadprofile Both
-    ; TODO Reopen anything that was closed
+    ReopenStuff()
+}
+
+CloseStuff() {
+    Process, Close, chrome.exe
+    Process, Close, firefox.exe
+    Process, Close, idea64.exe
+    Process, Close, transmission-qt.exe
 }
 
 OpenSteam() {
@@ -56,6 +64,10 @@ CloseSteam() {
 CloseVibranceGUI() {
     Sleep, 2000
     Process, Close, vibranceGUI.exe
+}
+
+ReopenStuff() {
+    ; TODO
 }
 
 DoNothing:
