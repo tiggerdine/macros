@@ -18,9 +18,11 @@ Before() {
     Run, "C:/Program Files (x86)/DisplayFusion/DisplayFusionCommand.exe" -monitorloadprofile Left
     OpenSteam()
     OpenVibranceGui()
+    Hotkey LWin, DoNothing
 }
 
 After() {
+    Hotkey LWin, Off
     CloseSteam()
     CloseVibranceGui()
     Run, "C:/Program Files (x86)/DisplayFusion/DisplayFusionCommand.exe" -monitorloadprofile Both
@@ -55,3 +57,5 @@ CloseVibranceGUI() {
     Sleep, 2000
     Process, Close, vibranceGUI.exe
 }
+
+DoNothing:
