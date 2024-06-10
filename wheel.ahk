@@ -7,7 +7,7 @@ SpinTheWheel() {
     Sleep, 1000
     Send, {F12}
     Sleep, 1000
-    Loop {
+    Loop 3 {
         WinGetTitle, Title, A
         if InStr(Title, "Wheel Decide") {
             break
