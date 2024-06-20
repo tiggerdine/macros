@@ -4,6 +4,7 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #Include wheel.ahk
+#Include book.ahk
 #Include cs.ahk
 
 ^+!#A::
@@ -15,7 +16,7 @@ SpinTheWheel()
 return
 
 ^+!#C::
-Send, C
+RandomBook()
 return
 
 ^+!#D::

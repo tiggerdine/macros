@@ -1,8 +1,6 @@
 SpinTheWheel() {
     Run, "C:/Program Files/Mozilla Firefox/firefox.exe"
-    Sleep, 500
-    WinMaximize, A
-    Sleep, 500
+    Sleep, 1000
     Send, wheel{Enter}
     Sleep, 1000
     Send, {F12}
@@ -17,6 +15,6 @@ SpinTheWheel() {
         }
     }
     Send, spin(){Enter}
-    Sleep, 500
+    Sleep, 1000
     Send, {F12}
 }
