@@ -28,6 +28,7 @@ After() {
     CloseVibranceGui()
     Run, "C:/Program Files (x86)/DisplayFusion/DisplayFusionCommand.exe" -monitorloadprofile Both
     ReopenStuff()
+    Send, !+{F10}
 }
 
 CloseStuff() {
