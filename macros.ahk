@@ -40,15 +40,14 @@ Send, H
 return
 
 ^+!#I::
-Send, I
+Run, "C:/Program Files/DisplayFusion/DisplayFusionCommand.exe" -monitorloadprofile Both
 return
 
 ^+!#J::
-Send, J
+Run, "C:/Program Files/DisplayFusion/DisplayFusionCommand.exe" -monitorloadprofile Right
 return
 
 ^+!#K::
-Send, K
 return
 
 ^+!#L::
