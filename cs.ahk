@@ -50,7 +50,7 @@ OpenSteam() {
 OpenVibranceGui() {
     Process, Exist, vibranceGUI.exe
     If Not ErrorLevel {
-        Run, "C:/Program Files (x86)/vibranceGUI/vibranceGUI.exe"
+        Run, "C:/Program Files (x86)/vibranceGUI_nvidia_only/vibranceGUI.exe"
     }
 }
 
